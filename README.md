@@ -10,9 +10,13 @@
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------|
 | [![Static Badge](https://img.shields.io/badge/MinGW-green)](https://www.mingw-w64.org/) | ![Static Badge](https://img.shields.io/badge/Windows-blue) |
 
-## 编译
+## 克隆仓库
 
-#### git-bash
+```bash
+git clone --recursive https://github.com/AliceRemake/SoftwareRenderer.git
+```
+
+## 编译
 
 ```bash
 mkdir build && cd build
@@ -20,13 +24,12 @@ cmake -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release ..
 mingw32-make -j16
 ```
 
-#### powershell
+## 第三方库
 
-```shell
-mkdir build && cd build
-cmake.exe -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release ..
-mingw32-make.exe -j16
-```
+* SDL：管理窗口和绘制imgui
+* imgui：UI
+* fmt：格式化库
+* glm：向量库
 
 ## 功能
 
